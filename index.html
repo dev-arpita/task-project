@@ -4,165 +4,554 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="normalize.min.css">
     <link rel="stylesheet" href="index.css">
     
 </head>
 <body>
-    <section class="container">
-        <aside class="left-section">
-            <!-- <div class="menu-container"> -->
-                <img src="/assets/Group 1.png" alt="" id="menu-btn" class="icon-img menu-btn">
-            <!-- </div> -->
-            <div class="menu-item__container">
-                <ul>
+    <section class="grid container">
+        <aside class="sidebar">
+                <img src="/assets/Group1.png" alt="" class="icon sidebar__btn-menu" />
+            <nav class="flex nav__menu" aria-label="nav">
+                <ul class="flex">
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/dashboard.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/dashboard.png" class="icon"/>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/parcel 1.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/parcel1.png" class="icon"/>
                             <span>Supplier Onboarding</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/data-source 1.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/data-source1.png" class="icon"/>
                             <span>Sourcing</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/contract 2.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/contract2.png" class="icon"/>
                             <span>Contact</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/cart 2.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/cart2.png" class="icon"/>
                             <span>Purchasing</span>
-                            <img src="/assets/Vector 3 (Stroke).png" alt="" class="icon-img icon-img__chevron">
+                            <img src="/assets/Vector3-Stroke.png" alt="" class="icon icon__chevron">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/Vector.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/Vector.png" class="icon"/>
                             <span>Invoice Management</span>
-                            <img src="/assets/Vector 3 (Stroke).png" alt="" class="icon-img icon-img__chevron">
+                            <img src="/assets/Vector3-Stroke.png" alt="" class="icon icon__chevron">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/create 2.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/create2.png" class="icon"/>
                             <span>Create Invoice</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/project-management 2.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/project-management2.png" class="icon"/>
                             <span>Manage Invoice</span>
                         </a>
                     </li>
                 </ul>
-                <ul class="menu__bottom">
+                <ul class="flex nav__item-bottom">
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/Master Data.png" class="icon-img" />
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/MasterData.png" class="icon" />
                             <span>Reports</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/icons8-knowledge-64 2.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/icons8-knowledge-642.png" class="icon"/>
                             <span>Quality Report</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/Group 3542.png" class="icon-img" />
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/Group3542.png" class="icon" />
                             <span>Help Desk</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-items">
-                            <img src="./assets/Master Data-1.png" class="icon-img"/>
+                        <a href="#" class="flex nav__menu-items">
+                            <img src="./assets/MasterData-1.png" class="icon"/>
                             <span>Gate Entry</span>
                         </a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </aside>
         <section class="right-section">
-            <header class="header">
+            <header class="flex header">
                 <!-- menu button -->
-                <div>
-                    <img src="/assets/Group 1.png" alt="" id="menu-btn" class="icon-img__header">
+
+                <div class="menu-btn" >
+                    <img src="/assets/Group1.png" alt="" class="header__item-icon header__menu-icon__menu">
                 </div>
-                </div>
-                <nav class="navbar">
-                    <div class="menu-list__header">
+
+                <div class="divbar">
+                    <div class="flex header__menu-list">
                         <div>
                             <a href="#" class="list-item__header">
-                                <img src="/assets/settings 4.png" class="icon-img__header"/>
+                                <img src="/assets/settings4.png" class="header__item-icon"/>
                             </a>
                         </div>
                         <div>
                             <a href="#" class="list-item__header">
-                                <img src="/assets/Group.png" class="icon-img__header"/>
+                                <img src="/assets/Group.png" class="header__item-icon"/>
                             </a>
                         </div>
                         <div>
                             <a href="#" class="list-item__header">
-                                <img src="/assets/Group 3240.png" class="icon-img__header"/>
+                                <img src="/assets/Group3240.png" class="header__item-icon"/>
                             </a>
                         </div>
                         <div>
                             <a href="#" class="list-item__header">
-                                <img src="/assets/Group 3541.png" class="icon-img__header"/>
+                                <img src="/assets/Group3541.png" class="header__item-icon"/>
                             </a>
                         </div>
                     </div>
-                </nav>
+                </div>
             </header>
-            <section class="search">
-                <input type="text" placeholder="Search Area"/>
-                <select>
-                        <option>
-                            Sort by
-                        </option>
-                </select>
-                <select>
-                    <option>
-                       Filter
-                    </option>
-                </select>
+            <section class="flex search">
+                <input class="search__field" type="text" placeholder="Search here"/>
+                <div class="flex search__option">
+                    <div class="flex options">
+                        <img class="option__icon" src="/assets/sorting.png" alt="">
+                        <label for="page-count" aria-label="sort by"></label>
+                        <select>
+                                <option>
+                                    Sort by
+                                </option>
+                        </select>
+                    </div>
+                    <div class="flex options">
+                        <img class="option__icon" src="/assets/Group3657.png" alt="">
+                        <label for="page-count" aria-label="filter"></label>
+                        <select>
+                            <option>
+                            Filter
+                            </option>
+                        </select>
+                    </div>
+                </div>
             </section>
             <section class="breadcrumb">
                 <span>Home&nbsp;</span>
                 <span>&gt;</span>
                 <span>&nbsp; Invoice Management &nbsp;</span>
                 <span>&gt;</span>
-                <span>&nbsp;Create Invoice</span>
+                <span class="active">&nbsp;Create Invoice</span>
             </section>
-            <section class="filters">
-                <div class="status">status</div>
-                <div class="view">
-                    <span>List</span>
-                    <span class="active">Grid</span>
+            <section class="flex filters">
+                <div class="flex filter__status">
+                    <div class="status status__all">
+                        <span class="active">All</span>
+                        <span class="status__count active">9</span>
+                    </div>
+                    <div class="status">
+                        <span>Approved</span>
+                        <span class="status__count">8</span>
+                    </div>
+                    <div class="status">
+                        <span>In Process</span>
+                        <span class="status__count">6</span>
+                    </div>
+                    <div class="status">
+                        <span>Rejected</span>
+                        <span class="status__count">6</span>
+                    </div>
+                </div>
+            <!-- view -->
+                <div class="flex view">
+                    <div class="flex mode-list">
+                        <img class="mode__icon" src="/assets/list1.png" alt="">
+                        <span>List</span>
+                    </div>
+                    <div class="flex mode-grid">
+                        <img class="mode__icon" src="/assets/grid1.png" alt="">
+                        <span class="selected">Grid</span>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="flex show__result">
+                <div>Showing 5-10 of 54 result</div>
+                <div class="flex">
+                    <p>Result per page</p>
+                    <div class="">
+                        <select name="page-count">
+                            <option value="0">5</option>
+                        </select>
+                    </div>
                 </div>
             </section>
-            <section class="results-header">
-                <div class="status">No. of results</div>
-                <div class="view">
-                    <span>Results per page</span>
-                   
+            
+            <!-- card -->
+            <main class="results-content">
+                <div class="grid card__row">
+                    <div class="flex flex-col card__item card__item-green">
+                        <div class="flex card__item-header">
+                            <div>
+                                <p>
+                                    <span class="card__item-values">
+                                        PO Number
+                                    </span> : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Vendor Name
+                                    </span> : Voltas
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/assets/Page-1.png" alt="">
+                            </div>
+                            <div class="card__item-status green">Completed</div>
+                        </div>
+                        <div class="flex card__item-content">
+                            <div class="left-col">
+                                <p>
+                                    <span class="card__item-values">Company Code </span>
+                                    : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">PO Date</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Validity</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                    Ordered Value</span>
+                                    : 1000
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Delivered Value</span>
+                                    : 1000
+                                </p>
+                            </div>
+                            <div class="right-col">
+                                <p><span class="card__item-values">Invoiced Value</span> : 1000</p>
+                                <p>
+                                    <span class="card__item-values">Pending Amount-INR</span>: 1000</p>
+                                <p>
+                                   Payment Term</p>
+                                <p>
+                                    Down Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col card__item card__item-orange">
+                        <div class="flex card__item-header">
+                            <div>
+                                <p>
+                                    <span class="card__item-values">
+                                        PO Number
+                                    </span> : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Vendor Name
+                                    </span> : Voltas
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/assets/Page-1.png" alt="">
+                            </div>
+                            <div class="card__item-status orange">In Progress</div>
+                        </div>
+                        <div class="flex card__item-content">
+                            <div class="left-col">
+                                <p>
+                                    <span class="card__item-values">Company Code </span>
+                                    : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">PO Date</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Validity</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Ordered Value</span>
+                                    : 1000
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Delivered Value</span>
+                                    : 1000
+                                </p>
+                            </div>
+                            <div class="right-col">
+                                <p><span class="card__item-values">Invoiced Value</span> : 1000</p>
+                                <p>
+                                    <span class="card__item-values">Pending Amount-INR</span>
+                                    : 1000
+                                </p>
+                                <p>
+                                    Payment Term</p>
+                                <p>
+                                    Down Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </section>
-            <main class="results-content">Main Area</main>
+                <div class="grid card__row">
+                    <div class="flex flex-col card__item card__item-red">
+                        <div class="flex card__item-header">
+                            <div>
+                                <p>
+                                    <span class="card__item-values">
+                                        PO Number
+                                    </span> : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Vendor Name
+                                    </span> : Voltas
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/assets/Page-1.png" alt="">
+                            </div>
+                            <div class="card__item-status red">Rejected</div>
+                        </div>
+                        <div class="flex card__item-content">
+                            <div class="left-col">
+                                <p>
+                                    <span class="card__item-values">Company Code </span>
+                                    : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">PO Date</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Validity</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Ordered Value</span>
+                                    : 1000
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Delivered Value</span>
+                                    : 1000
+                                </p>
+                            </div>
+                            <div class="right-col">
+                                <p><span class="card__item-values">Invoiced Value</span> : 1000</p>
+                                <p>
+                                    <span class="card__item-values">Pending Amount-INR</span>: 1000
+                                </p>
+                                <p>
+                                    Payment Term</p>
+                                <p>
+                                    Down Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col card__item card__item-green">
+                        <div class="flex card__item-header">
+                            <div>
+                                <p>
+                                    <span class="card__item-values">
+                                        PO Number
+                                    </span> : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Vendor Name
+                                    </span> : Voltas
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/assets/Page-1.png" alt="">
+                            </div>
+                            <div class="card__item-status green">Completed</div>
+                        </div>
+                        <div class="flex card__item-content">
+                            <div class="left-col">
+                                <p>
+                                    <span class="card__item-values">Company Code </span>
+                                    : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">PO Date</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Validity</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Ordered Value</span>
+                                    : 1000
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Delivered Value</span>
+                                    : 1000
+                                </p>
+                            </div>
+                            <div class="right-col">
+                                <p><span class="card__item-values">Invoiced Value</span> : 1000</p>
+                                <p>
+                                    <span class="card__item-values">Pending Amount-INR</span>: 1000
+                                </p>
+                                <p>
+                                    Payment Term</p>
+                                <p>
+                                    Down Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid card__row">
+                    <div class="flex flex-col card__item card__item-green">
+                        <div class="flex card__item-header">
+                            <div>
+                                <p>
+                                    <span class="card__item-values">
+                                        PO Number
+                                    </span> : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Vendor Name
+                                    </span> : Voltas
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/assets/Page-1.png" alt="">
+                            </div>
+                            <div class="card__item-status green">Completed</div>
+                        </div>
+                        <div class="flex card__item-content">
+                            <div class="left-col">
+                                <p>
+                                    <span class="card__item-values">Company Code </span>
+                                    : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">PO Date</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Validity</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Ordered Value</span>
+                                    : 1000
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Delivered Value</span>
+                                    : 1000
+                                </p>
+                            </div>
+                            <div class="right-col">
+                                <p><span class="card__item-values">Invoiced Value</span> : 1000</p>
+                                <p>
+                                    <span class="card__item-values">Pending Amount-INR</span>: 1000
+                                </p>
+                                <p>
+                                    Payment Term</p>
+                                <p>
+                                    Down Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col card__item card__item-red">
+                        <div class="flex card__item-header">
+                            <div>
+                                <p>
+                                    <span class="card__item-values">
+                                        PO Number
+                                    </span> : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Vendor Name
+                                    </span> : Voltas
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/assets/Page-1.png" alt="">
+                            </div>
+                            <div class="card__item-status red">Rejected</div>
+                        </div>
+                        <div class="flex card__item-content">
+                            <div class="left-col">
+                                <p>
+                                    <span class="card__item-values">Company Code </span>
+                                    : 5001
+                                </p>
+                                <p>
+                                    <span class="card__item-values">PO Date</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Validity</span>
+                                    : 26/06/2022
+                                </p>
+                                <p>
+                                    <span class="card__item-values">
+                                        Ordered Value</span>
+                                    : 1000
+                                </p>
+                                <p>
+                                    <span class="card__item-values">Delivered Value</span>
+                                    : 1000
+                                </p>
+                            </div>
+                            <div class="right-col">
+                                <p><span class="card__item-values">Invoiced Value</span> : 1000</p>
+                                <p>
+                                    <span class="card__item-values">Pending Amount-INR</span>: 1000
+                                </p>
+                                <p>
+                                    Payment Term</p>
+                                <p>
+                                    Down Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+   
+                
+                
+                
+            </main>
         </section>
     </section>
+
 </body>
 </html>
