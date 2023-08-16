@@ -111,9 +111,14 @@ ul {
         width: auto;
         height: 100%;
         color: var(--clr-white);
-        padding: 1rem .7rem 2rem;
+        padding: 1rem 0 0;
         transform: translateX(0);
     }
+
+        .nav__menu {
+            height: 95vh;
+            padding: 0 1rem;
+        }
     
 
    
