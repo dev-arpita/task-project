@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300;700&display=swap"
+            rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="tw.css">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        width:{
+                            'left-col': '55%',
+                            'right-col': '45%'
+                        },
+                        boxShadow: {
+                            'options': '0 0 5px #9C9FA0',
+                            'card': '0 5px 4px #9C9FA0'
+                        },
+                        borderWidth:{
+                            'header' : '3px'
+                        },
+                        borderColor:{
+                            'headercol': '#F5F5F5'
+                        },
+
+                        fontFamily: {
+                            'site': ["Open Sans", 'sans-serif']
+                        },
+                        colors: {
+                            'site-primary': '#37455F',
+                            'site-secondary': '#F5F5F5',
+                            'active': '#2F96AD',
+                            'light': '#9C9FA0',
+                            'green': '#0A8A3D',
+                            'card-header': ' rgba(47, 150, 173, 0.1)',
+                            'red': '#F21313',
+                            'orange': '#CD7930',
+                        },
+                        maxWidth: {
+                             '1440': '1440px',
+                        },
+                        gridTemplateColumns: {
+                            '16': '1fr',
+                            'big': '20% auto'
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body class="text-xs h-screen font-site leading-normal md:text-base">
+        <section class="grid grid-cols-16 md:grid-cols-big md:max-w-1440 h-full container">
+            <aside class="hidden md:block bg-site-primary text-white h-full p-4 ">
+                <img src="/assets/Group1.png" alt="" class="object-cover w-5 md:mb-4" />
+                <nav class="flex flex-col justify-between md:h-full md:gap-5" aria-label="nav">
+                    <ul class="flex flex-col list-none pl-0 md:gap-4">
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/dashboard.png" class="object-cover w-5" />
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/parcel1.png" class="object-cover w-5" />
+                                <span>Supplier Onboarding</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/data-source1.png" class="object-cover w-5" />
+                                <span>Sourcing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/contract2.png" class="object-cover w-5" />
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/cart2.png" class="object-cover w-5" />
+                                <span>Purchasing</span>
+                                <img src="/assets/Vector3-Stroke.png" alt="" class="object-cover w-5 md:w-3 md:ml-auto">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/Vector.png" class="object-cover w-5" />
+                                <span>Invoice Management</span>
+                                <img src="/assets/Vector3-Stroke.png" alt="" class="object-cover w-5 md:w-3 md:ml-auto">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/create2.png" class="object-cover w-5" />
+                                <span>Create Invoice</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/project-management2.png" class="object-cover w-5" />
+                                <span>Manage Invoice</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col list-none pl-0 pb-8 md:gap-4">
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/MasterData.png" class="icon" />
+                                <span>Reports</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/icons8-knowledge-642.png" class="icon" />
+                                <span>Quality Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/Group3542.png" class="icon" />
+                                <span>Help Desk</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
+                                <img src="./assets/MasterData-1.png" class="icon" />
+                                <span>Gate Entry</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="flex flex-col md:px-4">
+                <header class="flex justify-between py-2 px-4 border-b-header border-headercol border-solid">
+                    <!-- menu button -->
+
+                    <div class="inline-flex self-center bg-site-primary rounded-full p-3 md:opacity-0">
+                        <img src="/assets/Group1.png" alt="" class="object-cover w-4">
+                    </div>
+
+                        <div class="flex mt-2.5 items-center gap-4">
+                            <div>
+                                <a href="#" class="list-item__header no-underline text-inherit">
+                                    <img src="/assets/settings4.png" class="object-cover w-7" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="list-item__header no-underline text-inherit">
+                                    <img src="/assets/Group.png" class="object-cover w-7" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="list-item__header no-underline text-inherit">
+                                    <img src="/assets/Group3240.png" class="object-cover w-7" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="list-item__header no-underline text-inherit">
+                                    <img src="/assets/Group3541.png" class="object-cover w-7" />
+                                </a>
+                            </div>
+                        </div>
+        
+                </header>
+                <section class="flex flex-col pt-4 m-4 gap-2 md:flex-row">
+                    <input class="search__field" type="text" placeholder="Search here" />
+                    <div class="flex search__option">
+                        <div class="flex p-1 gap-1.5 rounded-md shadow-options">
+                            <img class="object-cover self-center h-3.5" src="/assets/sorting.png" alt="">
+                            <label for="page-count" aria-label="sort by"></label>
+                            <select class="border-0 text-inherit">
+                                <option>
+                                    Sort by
+                                </option>
+                            </select>
+                        </div>
+                        <div class="flex p-1 gap-1.5 rounded-md shadow-options">
+                            <img class="object-cover self-center h-3.5" src="/assets/Group3657.png" alt="">
+                            <label for="page-count" aria-label="filter"></label>
+                            <select class="border-0 text-inherit">
+                                <option>
+                                    Filter
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-0 text-sm p-4 breadcrumb">
+                    <span>Home&nbsp;</span>
+                    <span>&gt;</span>
+                    <span>&nbsp; Invoice Management &nbsp;</span>
+                    <span>&gt;</span>
+                    <span class="text-active">&nbsp;Create Invoice</span>
+                </section>
+                <section class="flex justify-between m-4 flex-wrap">
+                    <div class="flex gap-4">
+                        <div class="border-b-2 border-solid border-active">
+                            <span class="text-active">All</span>
+                            <span class="py-1 px-2 rounded-full bg-active text-site-secondary">9</span>
+                        </div>
+                        <div class="text-light">
+                            <span>Approved</span>
+                            <span class="py-1 px-2 rounded-full bg-site-secondary">8</span>
+                        </div>
+                        <div class="text-light">
+                            <span>In Process</span>
+                            <span class="py-1 px-2 rounded-full bg-site-secondary">6</span>
+                        </div>
+                        <div class="text-light">
+                            <span>Rejected</span>
+                            <span class="py-1 px-2 rounded-full bg-site-secondary">6</span>
+                        </div>
+                    </div>
+                    <!-- view -->
+                    <div class="flex justify-end w-full mt-2 gap-4 md:mt-0 md:w-1/6">
+                        <div class="flex gap-1 items-center bg-site-secondary py-1.5 px-4">
+                            <img class="object-cover w-4 h-4 self-center" src="/assets/list1.png" alt="">
+                            <span class="hidden md:block ">List</span>
+                        </div>
+                        <div class="flex gap-1 items-center bg-active py-1.5 px-4">
+                            <img class="object-cover w-4 h-4 self-center" src="/assets/grid1.png" alt="">
+                            <span class="hidden md:block text-white">Grid</span>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="flex justify-between text-light items-center mx-4 my-2 flex-wrap gap-4">
+                    <div>Showing 5-10 of 54 result</div>
+                    <div class="flex gap-1">
+                        <p class="m-0">Result per page</p>
+
+                            <select class="border border-solid border-light text-inherit">
+                                <option value="0">5</option>
+                            </select>
+
+                    </div>
+                </section>
+
+                <!-- card -->
+                <main class="m-4">
+                    <div class="grid grid-cols-1 gap-8 leading-relaxed mb-8 md:grid-cols-2 ">
+                        <div class="flex flex-col rounded-md shadow-card border-l-4 border-solid border-green">
+                            <div class="flex justify-between px-4 py-2 bg-card-header items-center flex-wrap">
+                                <div>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            PO Number
+                                        </span> : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32 ">
+                                            Vendor Name
+                                        </span> : Voltas
+                                    </p>
+                                </div>
+                                <div>
+                                    <img class="object-cover" src="/assets/Page-1.png" alt="">
+                                </div>
+                                <div class="tracking-wide font-bold text-lg text-green">Completed</div>
+                            </div>
+                            <div class="flex px-4 py-2 gap-4 font-sm">
+                                <div class="w-left-col">
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Company Code </span>
+                                        : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">PO Date</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Validity</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Ordered Value</span>
+                                        : 1000
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Delivered Value</span>
+                                        : 1000
+                                    </p>
+                                </div>
+                                <div class="w-right-col">
+                                    <p class="m-0"><span class="inline-block w-32">Invoiced Value</span> : 1000</p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Pending Amount-INR</span>: 1000
+                                    </p>
+                                    <p class="m-0">
+                                        Payment Term</p>
+                                    <p class="m-0">
+                                        Down Payment</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col rounded-md shadow-card border-l-4 border-solid border-orange">
+                            <div class="flex justify-between px-4 py-2 bg-card-header items-center flex-wrap">
+                                <div>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            PO Number
+                                        </span> : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Vendor Name
+                                        </span> : Voltas
+                                    </p>
+                                </div>
+                                <div>
+                                    <img class="object-cover" src="/assets/Page-1.png" alt="">
+                                </div>
+                                <div class="tracking-wide font-bold text-lg text-orange">In Progress</div>
+                            </div>
+                            <div class="flex px-4 py-2 gap-4 font-sm">
+                                <div class="w-left-col">
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Company Code </span>
+                                        : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">PO Date</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Validity</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Ordered Value</span>
+                                        : 1000
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Delivered Value</span>
+                                        : 1000
+                                    </p>
+                                </div>
+                                <div class="w-right-col">
+                                    <p class="m-0"><span class="inline-block w-32">Invoiced Value</span> : 1000</p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Pending Amount-INR</span>
+                                        : 1000
+                                    </p>
+                                    <p class="m-0">
+                                        Payment Term</p>
+                                    <p class="m-0">
+                                        Down Payment</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="grid grid-cols-1 gap-8 leading-relaxed mb-8 md:grid-cols-2  ">
+                        <div class="flex flex-col rounded-md shadow-card border-l-4 border-solid border-red">
+                            <div class="flex justify-between px-4 py-2 bg-card-header items-center flex-wrap">
+                                <div>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            PO Number
+                                        </span> : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Vendor Name
+                                        </span> : Voltas
+                                    </p>
+                                </div>
+                                <div>
+                                    <img class="object-cover" src="/assets/Page-1.png" alt="">
+                                </div>
+                                <div class="tracking-wide font-bold text-lg  text-red">Rejected</div>
+                            </div>
+                            <div class="flex px-4 py-2 gap-4 font-sm">
+                                <div class="w-left-col">
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Company Code </span>
+                                        : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">PO Date</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Validity</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Ordered Value</span>
+                                        : 1000
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Delivered Value</span>
+                                        : 1000
+                                    </p>
+                                </div>
+                                <div class="w-right-col">
+                                    <p class="m-0"><span class="inline-block w-32">Invoiced Value</span> : 1000</p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Pending Amount-INR</span>: 1000
+                                    </p>
+                                    <p class="m-0">
+                                        Payment Term</p>
+                                    <p class="m-0">
+                                        Down Payment</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col rounded-md shadow-card border-l-4 border-solid border-green">
+                            <div class="flex justify-between px-4 py-2 bg-card-header items-center flex-wrap">
+                                <div>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            PO Number
+                                        </span> : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Vendor Name
+                                        </span> : Voltas
+                                    </p>
+                                </div>
+                                <div>
+                                    <img class="object-cover" src="/assets/Page-1.png" alt="">
+                                </div>
+                                <div class="tracking-wide font-bold text-lg text-green">Completed</div>
+                            </div>
+                            <div class="flex px-4 py-2 gap-4 font-sm">
+                                <div class="w-left-col">
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Company Code </span>
+                                        : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">PO Date</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Validity</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Ordered Value</span>
+                                        : 1000
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Delivered Value</span>
+                                        : 1000
+                                    </p>
+                                </div>
+                                <div class="w-right-col">
+                                    <p class="m-0"><span class="inline-block w-32">Invoiced Value</span> : 1000</p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Pending Amount-INR</span>: 1000
+                                    </p>
+                                    <p class="m-0">
+                                        Payment Term</p>
+                                    <p class="m-0">
+                                        Down Payment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-8 leading-relaxed mb-8 md:grid-cols-2  ">
+                        <div class="flex flex-col rounded-md shadow-card border-l-4 border-solid border-green">
+                            <div class="flex justify-between px-4 py-2 bg-card-header items-center flex-wrap">
+                                <div>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            PO Number
+                                        </span> : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Vendor Name
+                                        </span> : Voltas
+                                    </p>
+                                </div>
+                                <div>
+                                    <img class="object-cover" src="/assets/Page-1.png" alt="">
+                                </div>
+                                <div class="tracking-wide font-bold text-lg text-green">Completed</div>
+                            </div>
+                            <div class="flex px-4 py-2 gap-4 font-sm">
+                                <div class="w-left-col">
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Company Code </span>
+                                        : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">PO Date</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Validity</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Ordered Value</span>
+                                        : 1000
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Delivered Value</span>
+                                        : 1000
+                                    </p>
+                                </div>
+                                <div class="w-right-col">
+                                    <p class="m-0"><span class="inline-block w-32">Invoiced Value</span> : 1000</p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Pending Amount-INR</span>: 1000
+                                    </p>
+                                    <p class="m-0">
+                                        Payment Term</p>
+                                    <p class="m-0">
+                                        Down Payment</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col rounded-md shadow-card border-l-4 border-solid border-red">
+                            <div class="flex justify-between px-4 py-2 bg-card-header items-center flex-wrap">
+                                <div>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            PO Number
+                                        </span> : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Vendor Name
+                                        </span> : Voltas
+                                    </p>
+                                </div>
+                                <div>
+                                    <img class="object-cover" src="/assets/Page-1.png" alt="">
+                                </div>
+                                <div class="tracking-wide font-bold text-lg text-red">Rejected</div>
+                            </div>
+                            <div class="flex px-4 py-2 gap-4 font-sm">
+                                <div class="w-left-col">
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Company Code </span>
+                                        : 5001
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">PO Date</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Validity</span>
+                                        : 26/06/2022
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">
+                                            Ordered Value</span>
+                                        : 1000
+                                    </p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Delivered Value</span>
+                                        : 1000
+                                    </p>
+                                </div>
+                                <div class="w-right-col">
+                                    <p class="m-0"><span class="inline-block w-32">Invoiced Value</span> : 1000</p>
+                                    <p class="m-0">
+                                        <span class="inline-block w-32">Pending Amount-INR</span>: 1000
+                                    </p>
+                                    <p class="m-0">
+                                        Payment Term</p>
+                                    <p class="m-0">
+                                        Down Payment</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </main>
+            </section>
+        </section>
+
+    </body>
+
+</html>

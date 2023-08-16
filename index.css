@@ -111,9 +111,7 @@ a {
 }
 /* ----------- Main section ------------*/  
 .right-section{
-    display: flex;
     flex-direction: column;  
-    padding: var(--ml-2);
 }
 
 @media screen and (min-width: 768px) {
@@ -293,11 +291,6 @@ select{
     }
 
 /* -------Result------------ */
-.results-header{
-    display: flex;
-    justify-content: space-between;
-    margin: var(--ml-4);
-}
 .results-content {
     margin: var(--ml-4);
 }
