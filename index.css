@@ -311,10 +311,11 @@ select{
     padding: var(--ml-2) var(--ml-4);
     align-items: center;
     flex-wrap: wrap;
+    gap: 14px;
 }
 .card__item-status {
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 1rem;
     letter-spacing: 1px;
 }
 .green {
@@ -336,7 +337,7 @@ select{
     border-left: 4px solid var(--clr-red);
 }
 .card__item-content {
-    padding: var(--ml-2) var(--ml-4);
+    padding:var(--ml-4);
     gap: 1rem;
     font-size: 0.9rem;
 }
@@ -354,4 +355,8 @@ select{
     .card__row {
         grid-template-columns: 1fr 1fr;
     }
+
+        .card__item-status {
+            font-size: 1.125rem;
+        }
 }
