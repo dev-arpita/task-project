@@ -47,10 +47,7 @@
                         maxWidth: {
                              '1440': '1440px',
                         },
-                        gridTemplateColumns: {
-                            '16': '1fr',
-                            'big': '20% auto'
-                        }
+                    
                     }
                 }
             }
@@ -58,10 +55,10 @@
     </head>
 
     <body class="text-xs h-screen font-site leading-normal md:text-base">
-        <section class="grid grid-cols-16 md:grid-cols-big md:max-w-1440">
-            <aside class="hidden md:block bg-site-primary text-white h-full p-4 ">
+        <section class="grid md:max-w-1440">
+            <aside class="hidden md:block bg-site-primary overflow-scroll text-white h-screen p-4 fixed">
                     <img src="/assets/Group1.png" alt="" class="w-5 md:mb-4" />
-                    <nav class="flex flex-col p-4 pl-0 justify-between md:h-screen md:gap-5" aria-label="nav">
+                    <nav class="flex flex-col p-4 pl-0 justify-between md:h-full md:gap-5" aria-label="nav">
                         <ul class="flex flex-col list-none pl-0 md:gap-4">
                             <li>
                                 <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
@@ -143,112 +140,113 @@
                     </nav>
                 <!-- </div> -->
             </aside>
-            <section class="flex flex-col md:px-4 ">
-                <header class="flex justify-between py-2 px-4 border-b-header border-headercol border-solid">
-                    <!-- menu button -->
-
-                    <div class="inline-flex self-center bg-site-primary rounded-full px-2.5 py-3  md:opacity-0">
-                        <img src="/assets/Group1.png" alt="" class="w-4">
-                    </div>
-
-                        <div class="flex items-center gap-4">
-                            <div>
-                                <a href="#" class="list-item__header no-underline text-inherit">
-                                    <img src="/assets/settings4.png" class="w-7" />
-                                </a>
+            <section class="flex flex-col md:px-4 ml-auto md:w-10/12">
+                <div class="fixed top-0 right-0 bg-white z-10 md:left-60 md:ml-4">
+                    <!-- header -->
+                    <header class="flex justify-between py-2 px-4 border-b-header border-headercol border-solid">
+                        <!-- menu button -->
+                        <div class="inline-flex self-center bg-site-primary rounded-full px-2.5 py-3  md:opacity-0">
+                            <img src="/assets/Group1.png" alt="" class="w-4">
+                        </div>
+                            <div class="flex items-center gap-4">
+                                <div>
+                                    <a href="#" class="list-item__header no-underline text-inherit">
+                                        <img src="/assets/settings4.png" class="w-7" />
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="list-item__header no-underline text-inherit">
+                                        <img src="/assets/Group.png" class="w-7" />
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="list-item__header no-underline text-inherit">
+                                        <img src="/assets/Group3240.png" class="w-7" />
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="list-item__header no-underline text-inherit">
+                                        <img src="/assets/Group3541.png" class="w-7" />
+                                    </a>
+                                </div>
                             </div>
-                            <div>
-                                <a href="#" class="list-item__header no-underline text-inherit">
-                                    <img src="/assets/Group.png" class="w-7" />
-                                </a>
+                    </header>
+                    <!-- search-field -->
+                    <section class="flex flex-col pt-4 m-4 gap-2 md:flex-row">
+                        <input class="border border-solid border-active outline-0 rounded-3xl py-2 px-4 max-w-sm w-80 font-search placeholder:italic placeholder:text-active" type="text" placeholder="Search here" />
+                        <div class="flex p-1.5 text-gray gap-2">
+                            <div class="flex p-1 gap-1 rounded-md shadow-options">
+                                <img class="pl-1 self-center h-3.5" src="/assets/sorting.png" alt="">
+                                <select class="border-0 text-inherit">
+                                    <option>
+                                        Sort by
+                                    </option>
+                                </select>
                             </div>
-                            <div>
-                                <a href="#" class="list-item__header no-underline text-inherit">
-                                    <img src="/assets/Group3240.png" class="w-7" />
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#" class="list-item__header no-underline text-inherit">
-                                    <img src="/assets/Group3541.png" class="w-7" />
-                                </a>
+                            <div class="flex p-1 gap-1.5 rounded-md shadow-options">
+                                <img class="pl-1 self-center h-3.5" src="/assets/Group3657.png" alt="">
+                                <select class="border-0 text-inherit">
+                                    <option>
+                                        Filter
+                                    </option>
+                                </select>
                             </div>
                         </div>
-        
-                </header>
-                <section class="flex flex-col pt-4 m-4 gap-2 md:flex-row">
-                    <input class="border border-solid border-active outline-0 rounded-3xl py-2 px-4 max-w-sm w-80 font-search placeholder:italic placeholder:text-active" type="text" placeholder="Search here" />
-                    <div class="flex p-1.5 text-gray gap-2">
-                        <div class="flex p-1 gap-1 rounded-md shadow-options">
-                            <img class="pl-1 self-center h-3.5" src="/assets/sorting.png" alt="">
-                            <select class="border-0 text-inherit">
-                                <option>
-                                    Sort by
-                                </option>
-                            </select>
+                    </section>
+                    <!-- breadcrumb -->
+                    <section class="mt-0 text-sm px-4 py-2 ">
+                        <span>Home&nbsp;</span>
+                        <span>&gt;</span>
+                        <span>&nbsp; Invoice Management &nbsp;</span>
+                        <span>&gt;</span>
+                        <span class="text-active">&nbsp;Create Invoice</span>
+                    </section>
+                    <!-- filter -->
+                    <section class="flex justify-between px-4 py-3 flex-wrap">
+                        <div class="flex gap-4">
+                            <div class="border-b-2 pb-1 border-solid border-active">
+                                <span class="text-active">All</span>
+                                <span class="py-0.5 md:py-1 px-2 md:px-2.5 text-sm rounded-full bg-active text-site-secondary">9</span>
+                            </div>
+                            <div class="text-light pb-1">
+                                <span>Approved</span>
+                                <span class="md:py-1 py-0.5 px-2 md:px-2.5 text-sm rounded-full bg-site-secondary">8</span>
+                            </div>
+                            <div class="text-light pb-1">
+                                <span>In Process</span>
+                                <span class="md:py-1 py-0.5 px-2 md:px-2.5 text-sm rounded-full bg-site-secondary">6</span>
+                            </div>
+                            <div class="text-light pb-1">
+                                <span>Rejected</span>
+                                <span class="md:py-1 py-0.5 px-2 md:px-2.5 text-sm rounded-full bg-site-secondary">6</span>
+                            </div>
                         </div>
-                        <div class="flex p-1 gap-1.5 rounded-md shadow-options">
-                            <img class="pl-1 self-center h-3.5" src="/assets/Group3657.png" alt="">
-                            <select class="border-0 text-inherit">
-                                <option>
-                                    Filter
-                                </option>
-                            </select>
+                        <!-- view -->
+                        <div class="flex justify-end w-full mt-2 gap-4 md:mt-0 md:w-1/6">
+                            <div class="flex gap-1.5 items-center bg-site-secondary py-1.5 px-4 shadow-lg">
+                                <img class="w-4 h-4 self-center " src="/assets/list1.png" alt="">
+                                <span class="hidden md:block pr-4 ">List</span>
+                            </div>
+                            <div class="flex gap-1.5 items-center bg-active py-1.5 px-4 shadow-lg">
+                                <img class="w-4 h-4 self-center" src="/assets/grid1.png" alt="">
+                                <span class="hidden md:block pr-4 text-white">Grid</span>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <section class="mt-0 text-sm px-4 py-2 breadcrumb">
-                    <span>Home&nbsp;</span>
-                    <span>&gt;</span>
-                    <span>&nbsp; Invoice Management &nbsp;</span>
-                    <span>&gt;</span>
-                    <span class="text-active">&nbsp;Create Invoice</span>
-                </section>
-                <section class="flex justify-between px-4 py-3 flex-wrap">
-                    <div class="flex gap-4">
-                        <div class="border-b-2 pb-1 border-solid border-active">
-                            <span class="text-active">All</span>
-                            <span class="py-0.5 md:py-1 px-2 md:px-2.5 text-sm rounded-full bg-active text-site-secondary">9</span>
-                        </div>
-                        <div class="text-light pb-1">
-                            <span>Approved</span>
-                            <span class="md:py-1 py-0.5 px-2 md:px-2.5 text-sm rounded-full bg-site-secondary">8</span>
-                        </div>
-                        <div class="text-light pb-1">
-                            <span>In Process</span>
-                            <span class="md:py-1 py-0.5 px-2 md:px-2.5 text-sm rounded-full bg-site-secondary">6</span>
-                        </div>
-                        <div class="text-light pb-1">
-                            <span>Rejected</span>
-                            <span class="md:py-1 py-0.5 px-2 md:px-2.5 text-sm rounded-full bg-site-secondary">6</span>
-                        </div>
-                    </div>
+                    </section>
                     <!-- view -->
-                    <div class="flex justify-end w-full mt-2 gap-4 md:mt-0 md:w-1/6">
-                        <div class="flex gap-1.5 items-center bg-site-secondary py-1.5 px-4 shadow-lg">
-                            <img class="w-4 h-4 self-center " src="/assets/list1.png" alt="">
-                            <span class="hidden md:block pr-4 ">List</span>
+                    <section class="flex justify-between text-light items-center px-4 py-2 flex-wrap gap-4">
+                        <div>Showing 5-10 of 54 result</div>
+                        <div class="flex gap-1">
+                            <p class="m-0">Result per page</p>
+                                <select class="border border-solid border-light text-inherit">
+                                    <option value="0">5</option>
+                                </select>
                         </div>
-                        <div class="flex gap-1.5 items-center bg-active py-1.5 px-4 shadow-lg">
-                            <img class="w-4 h-4 self-center" src="/assets/grid1.png" alt="">
-                            <span class="hidden md:block pr-4 text-white">Grid</span>
-                        </div>
-                    </div>
-
-                </section>
-                <section class="flex justify-between text-light items-center px-4 py-2 flex-wrap gap-4">
-                    <div>Showing 5-10 of 54 result</div>
-                    <div class="flex gap-1">
-                        <p class="m-0">Result per page</p>
-
-                            <select class="border border-solid border-light text-inherit">
-                                <option value="0">5</option>
-                            </select>
-
-                    </div>
-                </section>
-
+                    </section>
+                </div>
+                <!-- <div class="h-4/5"></div> -->
                 <!-- card -->
-                <main class="m-4">
+                <main class="m-4 mt-96 md:mt-80">
                     <div class="grid grid-cols-1 gap-8 leading-relaxed mb-8 md:grid-cols-2 ">
                         <div class="flex flex-col rounded-md shadow-card border-l-4 border-solid border-green">
                             <div class="flex justify-between px-4 py-2 bg-card-header items-center gap-2.5 gap-y-1 flex-wrap">
