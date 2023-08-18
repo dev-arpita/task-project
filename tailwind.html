@@ -56,9 +56,10 @@
 
     <body class="text-xs h-screen font-site leading-normal md:text-base">
         <section class="grid md:max-w-1440">
-            <aside class="hidden md:block bg-site-primary overflow-scroll text-white h-screen p-4 fixed">
+            <!-- Sidebar -->
+            <aside class="hidden md:block bg-site-primary overflow-auto text-white h-screen p-4 fixed w-1/5">
                     <img src="/assets/Group1.png" alt="" class="w-5 md:mb-4" />
-                    <nav class="flex flex-col p-4 pl-0 justify-between md:h-full md:gap-5" aria-label="nav">
+                    <nav class="flex flex-col p-4 pl-0 pr-0  justify-between md:h-full md:gap-5" aria-label="nav">
                         <ul class="flex flex-col list-none pl-0 md:gap-4">
                             <li>
                                 <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
@@ -95,7 +96,7 @@
                                 <a href="#" class="flex no-underline text-inherit md:items-center md:gap-2.5">
                                     <img src="./assets/Vector.png" class=" w-5" />
                                     <span>Invoice Management</span>
-                                    <img src="/assets/Vector3-Stroke.png" alt="" class=" w-5 md:w-3 md:ml-auto">
+                                    <img src="/assets/Vector3-Stroke.png" alt="" class="w-5 md:w-3 md:ml-auto">
                                 </a>
                             </li>
                             <li>
@@ -138,10 +139,10 @@
                             </li>
                         </ul>
                     </nav>
-                <!-- </div> -->
             </aside>
+            <!-- Main Section -->
             <section class="flex flex-col md:px-4 ml-auto md:w-10/12">
-                <div class="fixed top-0 right-0 bg-white z-10 md:left-60 md:ml-4">
+                <div class="fixed top-0 right-0 bg-white z-10 md:left-60 md:ml-11 shadow-lg pb-2">
                     <!-- header -->
                     <header class="flex justify-between py-2 px-4 border-b-header border-headercol border-solid">
                         <!-- menu button -->
@@ -244,9 +245,8 @@
                         </div>
                     </section>
                 </div>
-                <!-- <div class="h-4/5"></div> -->
                 <!-- card -->
-                <main class="m-4 mt-96 md:mt-80">
+                <main class="m-4 mt-96 md:pl-10 md:mt-80">
                     <div class="grid grid-cols-1 gap-8 leading-relaxed mb-8 md:grid-cols-2 ">
                         <div class="flex flex-col rounded-md shadow-card border-l-4 border-solid border-green">
                             <div class="flex justify-between px-4 py-2 bg-card-header items-center gap-2.5 gap-y-1 flex-wrap">
